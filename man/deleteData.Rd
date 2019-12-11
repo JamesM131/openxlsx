@@ -25,7 +25,7 @@ Delete contents and styling from a cell.
 ## write some data
 wb <- createWorkbook()
 addWorksheet(wb, "Worksheet 1")
-x <- data.frame(matrix(runif(200), ncol = 10)) 
+x <- data.frame(matrix(runif(200), ncol = 10))
 writeData(wb, sheet = 1, x = x, startCol = 2, startRow = 3, colNames = FALSE)
 
 ## delete some data

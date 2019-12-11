@@ -59,13 +59,13 @@ dataValidation(wb, 1, col = 5, rows = 2:31, type = "textLength"
 ## Date and Time cell validation
 df <- data.frame("d" = as.Date("2016-01-01") + -5:5,
                  "t" = as.POSIXct("2016-01-01")+ -5:5*10000)
-                 
+
 writeData(wb, 2, x = df)
-dataValidation(wb, 2, col = 1, rows = 2:12, type = "date", 
+dataValidation(wb, 2, col = 1, rows = 2:12, type = "date",
    operator = "greaterThanOrEqual", value = as.Date("2016-01-01"))
 
-dataValidation(wb, 2, col = 2, rows = 2:12, type = "time", 
-   operator = "between", value = df$t[c(4, 8)]) 
+dataValidation(wb, 2, col = 2, rows = 2:12, type = "time",
+   operator = "between", value = df$t[c(4, 8)])
 
 \dontrun{saveWorkbook(wb, "dataValidationExample.xlsx", overwrite = TRUE)}
 

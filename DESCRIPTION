@@ -37,7 +37,8 @@ Imports:
 Suggests:
     knitr,
     testthat,
-    roxygen2
+    roxygen2,
+    styler
 LinkingTo: 
     Rcpp
 VignetteBuilder: 

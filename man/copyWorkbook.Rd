@@ -17,7 +17,7 @@ Just a wrapper of wb$copy()
 }
 \examples{
 
-wb <- createWorkbook()  
+wb <- createWorkbook()
 wb2 <- wb ## does not create a copy
 wb3 <- copyWorkbook(wb) ## wrapper for wb$copy()
 

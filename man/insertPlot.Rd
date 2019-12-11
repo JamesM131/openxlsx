@@ -39,7 +39,7 @@ insertPlot(
 \item{dpi}{Image resolution}
 }
 \description{
-The current plot is saved to a temporary image file using dev.copy.  
+The current plot is saved to a temporary image file using dev.copy.
 This file is then written to the workbook using insertImage.
 }
 \examples{
@@ -48,7 +48,7 @@ This file is then written to the workbook using insertImage.
 wb <- createWorkbook()
 
 ## Add a worksheet
-addWorksheet(wb, "Sheet 1", gridLines = FALSE) 
+addWorksheet(wb, "Sheet 1", gridLines = FALSE)
 
 ## create plot objects
 require(ggplot2)

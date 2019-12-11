@@ -23,7 +23,7 @@ Set worksheet row heights
 wb <- createWorkbook()
 
 ## Add a worksheet
-addWorksheet(wb, "Sheet 1") 
+addWorksheet(wb, "Sheet 1")
 
 ## set row heights
 setRowHeights(wb, 1, rows = c(1,4,22,2,19), heights = c(24,28,32,42,33))

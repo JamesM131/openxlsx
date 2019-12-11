@@ -17,7 +17,7 @@ Remove a worksheet from a Workbook object
 Remove a worksheet from a workbook
 }
 \examples{
-## load a workbook 
+## load a workbook
 wb <- loadWorkbook(file = system.file("extdata","loadExample.xlsx", package = "openxlsx"))
 
 ## Remove sheet 2
