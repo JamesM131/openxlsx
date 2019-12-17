@@ -359,7 +359,7 @@ addWorksheet <- function(wb, sheetName,
   }
 
   if (tolower(sheetName) %in% tolower(wb$sheet_names)) {
-    stop("A worksheet by that name already exists! Sheet names must be unique case-insensitive.")
+    stop(paste0("The worksheet '",sheetName,"' already exists! Sheet names must be unique case-insensitive."))
   }
 
   if (!is.logical(gridLines) | length(gridLines) > 1) {
@@ -405,6 +405,7 @@ addWorksheet <- function(wb, sheetName,
   if (!is.null(firstFooter) & length(firstFooter) != 3) {
     stop("firstFooter must have length 3 where elements correspond to positions: left, center, right.")
   }
+  
 
   visible <- tolower(visible[1])
   if (!visible %in% c("true", "false", "hidden", "visible", "veryhidden")) {
@@ -426,7 +427,7 @@ addWorksheet <- function(wb, sheetName,
     stop("hdpi must be numeric")
   }
 
-
+  
 
   ## Invalid XML characters
   sheetName <- replaceIllegalCharacters(sheetName)
